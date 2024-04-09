@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         graylighter:"#1C1C1C1A",
+        graylighter2:"#1C1C1C0D",
         graylight:"#1C1C1C33",
         graynormal:"#1C1C1C66"
       },
@@ -18,3 +19,5 @@ export default {
   },
   plugins: [],
 }
+
+
