@@ -22,8 +22,8 @@ function Sidebar() {
         <img src="/logo.svg" alt="logo" />
       </div>
       <div className="flex items-center gap-4 mt-5">
-        <p className="text-graynormal">Favorites</p>
-        <p className="text-graylight">Recently</p>
+        <p className="text-grey-500">Favorites</p>
+        <p className="text-grey-300">Recently</p>
       </div>
       <ul className="mt-2 flex flex-col gap-3">
         <li className="flex items-center gap-2">
@@ -40,9 +40,9 @@ function Sidebar() {
         </li>
       </ul>
       <div className="mt-10">
-        <p className="text-graynormal">Dashboards</p>
+        <p className="text-grey-500">Dashboards</p>
         <ul className="mt-2 flex flex-col gap-2 ml-2">
-          <li className="flex items-center gap-3 bg-graylighter  pl-5 py-2 rounded-lg transition-all">
+          <li className="flex items-center gap-3 bg-grey-100  pl-5 py-2 rounded-lg transition-all">
             <span>
               <RiPieChartFill size={20} color="" />
             </span>{" "}
@@ -51,7 +51,7 @@ function Sidebar() {
             </NavLink>
           </li>
 
-          <li className="flex items-center gap-1 hover:bg-graylighter py-2 pl-2 hover:pl-3 rounded-lg transition-all">
+          <li className="flex items-center gap-1 hover:bg-grey-100 py-2 pl-2 hover:pl-3 rounded-lg transition-all">
             <span>
               <MdOutlineKeyboardArrowRight size={20} color="#1C1C1C33" />
             </span>
@@ -63,7 +63,7 @@ function Sidebar() {
             </NavLink>
           </li>
 
-          <li className="flex items-center gap-1 hover:bg-graylighter py-2 pl-2 hover:pl-3 rounded-lg transition-all">
+          <li className="flex items-center gap-1 hover:bg-grey-100 py-2 pl-2 hover:pl-3 rounded-lg transition-all">
             <span>
               <MdOutlineKeyboardArrowRight size={20} color="#1C1C1C33" />
             </span>
@@ -74,7 +74,7 @@ function Sidebar() {
               Book Balance
             </NavLink>
           </li>
-          <li className="flex items-center gap-1 hover:bg-graylighter py-2 pl-2 hover:pl-3 rounded-lg transition-all">
+          <li className="flex items-center gap-1 hover:bg-grey-100 py-2 pl-2 hover:pl-3 rounded-lg transition-all">
             <span>
               <MdOutlineKeyboardArrowRight size={20} color="#1C1C1C33" />
             </span>
@@ -88,9 +88,9 @@ function Sidebar() {
         </ul>
       </div>
       <div className="mt-10">
-        <p className="text-graynormal">Pages</p>
+        <p className="text-grey-500">Pages</p>
         <ul className="mt-2 flex flex-col gap-2 ml-2">
-          <li className="flex items-center gap-1 hover:bg-graylighter py-2 pl-2 hover:pl-3 rounded-lg transition-all">
+          <li className="flex items-center gap-1 hover:bg-grey-100 py-2 pl-2 hover:pl-3 rounded-lg transition-all">
             <span>
               <MdOutlineKeyboardArrowRight size={20} color="#1C1C1C33" />
             </span>
@@ -101,18 +101,18 @@ function Sidebar() {
               Sub Account
             </NavLink>
           </li>
-          <li className="flex items-center gap-1 hover:bg-graylighter py-2 pl-2 hover:pl-3 rounded-lg transition-all">
+          <li className="flex items-center gap-1 hover:bg-grey-100 py-2 pl-2 hover:pl-3 rounded-lg transition-all">
             <NavLink to="" className="text-center mx-auto">
               All Account
             </NavLink>
           </li>
-          <li className="flex items-center gap-1 hover:bg-graylighter py-2 pl-2 hover:pl-3 rounded-lg transition-all">
+          <li className="flex items-center gap-1 hover:bg-grey-100 py-2 pl-2 hover:pl-3 rounded-lg transition-all">
             <NavLink to="" className="text-center mx-auto">
               Add Account
             </NavLink>
           </li>
 
-          <li className="flex items-center gap-1 hover:bg-graylighter py-2 pl-2 hover:pl-3 rounded-lg transition-all">
+          <li className="flex items-center gap-1 hover:bg-grey-100 py-2 pl-2 hover:pl-3 rounded-lg transition-all">
             <span>
               <MdOutlineKeyboardArrowRight size={20} color="#1C1C1C33" />
             </span>
@@ -123,7 +123,7 @@ function Sidebar() {
               Digital Wallet
             </NavLink>
           </li>
-          <li className="flex items-center gap-1 hover:bg-graylighter py-2 pl-2 hover:pl-3 rounded-lg transition-all">
+          <li className="flex items-center gap-1 hover:bg-grey-100 py-2 pl-2 hover:pl-3 rounded-lg transition-all">
             <span>
               <MdOutlineKeyboardArrowRight size={20} color="#1C1C1C33" />
             </span>
@@ -134,7 +134,7 @@ function Sidebar() {
               Payment Link
             </NavLink>
           </li>
-          <li className="flex items-center gap-1 hover:bg-graylighter py-2 pl-2 hover:pl-3 rounded-lg transition-all">
+          <li className="flex items-center gap-1 hover:bg-grey-100 py-2 pl-2 hover:pl-3 rounded-lg transition-all">
             <span>
               <MdOutlineKeyboardArrowRight size={20} color="#1C1C1C33" />
             </span>
@@ -145,7 +145,7 @@ function Sidebar() {
               Payouts
             </NavLink>
           </li>
-          <li className="flex items-center gap-1 hover:bg-graylighter py-2 pl-2 hover:pl-3 rounded-lg transition-all">
+          <li className="flex items-center gap-1 hover:bg-grey-100 py-2 pl-2 hover:pl-3 rounded-lg transition-all">
             <span>
               <MdOutlineKeyboardArrowRight size={20} color="#1C1C1C33" />
             </span>
@@ -156,7 +156,7 @@ function Sidebar() {
               Mandates
             </NavLink>
           </li>
-          <li className="flex items-center gap-1 hover:bg-graylighter py-2 pl-2 hover:pl-3 rounded-lg transition-all">
+          <li className="flex items-center gap-1 hover:bg-grey-100 py-2 pl-2 hover:pl-3 rounded-lg transition-all">
             <span>
               <MdOutlineKeyboardArrowRight size={20} color="#1C1C1C33" />
             </span>
@@ -167,7 +167,7 @@ function Sidebar() {
               Profile
             </NavLink>
           </li>
-          <li className="flex items-center gap-1 hover:bg-graylighter py-2 pl-2 hover:pl-3 rounded-lg transition-all">
+          <li className="flex items-center gap-1 hover:bg-grey-100 py-2 pl-2 hover:pl-3 rounded-lg transition-all">
             <span>
               <MdOutlineKeyboardArrowRight size={20} color="#1C1C1C33" />
             </span>
@@ -181,7 +181,7 @@ function Sidebar() {
         </ul>
       </div>
       <div className="mt-10">
-        <p className="text-graynormal">Actions</p>
+        <p className="text-grey-500">Actions</p>
         <ul className="mt-2 flex flex-col gap-3">
           <li className="flex items-center gap-2">
             <span>
