@@ -46,7 +46,7 @@ function TransferChannelChart() {
         </div>
       </div>
       <div>
-      <ResponsiveContainer height={330} width="100%">
+      <ResponsiveContainer height={280} width="100%">
       <PieChart>
           <Pie
             data={data}

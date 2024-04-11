@@ -1,4 +1,3 @@
-
 import { HiOutlineAdjustmentsHorizontal } from "react-icons/hi2";
 import {
   Bar,
@@ -56,7 +55,7 @@ function TransactionChart() {
         </div>
       </div>
       <div>
-        <ResponsiveContainer height={330} width="100%">
+        <ResponsiveContainer height={280} width="100%">
           <BarChart data={data}>
             {/* <CartesianGrid strokeDasharray="3 3" /> */}
             <XAxis
@@ -72,7 +71,7 @@ function TransactionChart() {
             <Bar dataKey="thur" fill="#7F61F9" barSize={28} />
             <Bar dataKey="fri" fill="#2F8ED6" barSize={28} />
             <Bar dataKey="sat" fill="#DD0A35" barSize={28} />
-          </BarChart>{" "}
+          </BarChart>
         </ResponsiveContainer>
       </div>
     </StyledTransactionChart>
