@@ -10,8 +10,7 @@ function AppLayout() {
       <main className=" ml-60 mr-72 border border-x border-l-grey-100 w-full h-screen">
         <Header />
         <div className="px-7 py-10">
-
-        <Outlet />
+          <Outlet />
         </div>
       </main>
       <Notification />

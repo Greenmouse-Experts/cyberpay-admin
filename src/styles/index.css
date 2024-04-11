@@ -138,6 +138,10 @@ p,li {
   font-size: 14px;
   font-weight: 400;
 }
+span{
+  font-size: 12px;
+  font-weight: 400;
+}
 
 .no-scrollbar {
   /* Target WebKit browsers (Chrome, Safari, etc.) */

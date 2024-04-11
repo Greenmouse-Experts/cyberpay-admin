@@ -1,5 +1,13 @@
 
 import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import styled from "styled-components";
+
+const StyledAreaChart = styled.div`
+  grid-column: 1 / span 3;
+  background-color:var(--color-grey-50);
+  padding: 24px;
+  border-radius:var(--border-radius-xl);
+`;
 
 
 const fakeData = [
@@ -45,7 +53,8 @@ function AreaCharts() {
       };
 
   return (
-    <div className=" bg-grey-50 p-6 rounded-2xl">
+
+    <StyledAreaChart>
       <div className="flex gap-4 mb-5">
         <p className="font-semibold">Date</p>
         <p>Opening Balance</p>
@@ -90,7 +99,7 @@ function AreaCharts() {
         </AreaChart>
       </ResponsiveContainer>
       </div>
-    </div>
+    </StyledAreaChart>
   );
 }
 
