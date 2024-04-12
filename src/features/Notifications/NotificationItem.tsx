@@ -2,7 +2,7 @@ import { BiTransferAlt } from "react-icons/bi";
 
 export function NotificationItem() {
   return (
-    <div className="flex items-start gap-1 mt-3">
+    <div className="flex items-start gap-1 mt-3 px-2 py-1 hover:bg-grey-100 hover:scale-105 rounded-lg transition-all cursor-pointer">
       <div className=" bg-[#E8F0FC] px-1 py-1 rounded-lg">
         <BiTransferAlt size={14} />
       </div>
@@ -15,7 +15,7 @@ export function NotificationItem() {
 }
 export function ActivitiesItem() {
   return (
-    <div className="flex items-start gap-2 mt-3">
+    <div className="flex items-start gap-2 mt-3 px-2 py-1 hover:bg-grey-100 hover:scale-105 rounded-lg transition-all cursor-pointer">
       <div className="">
         <img
           src="/images/activity-1.svg"
@@ -32,7 +32,7 @@ export function ActivitiesItem() {
 }
 export function SubAccountItem() {
   return (
-    <div className="flex items-start gap-2 mt-3">
+    <div className="flex items-start gap-2 mt-3 px-2 py-1 hover:bg-grey-100 hover:scale-105 rounded-lg transition-all cursor-pointer">
       <div className="">
         <img
           src="/images/activity-1.svg"
