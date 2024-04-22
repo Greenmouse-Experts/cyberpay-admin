@@ -1,12 +1,17 @@
 
 import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import styled from "styled-components";
+import { device } from "../../styles/Globalstyles";
 
 const StyledAreaChart = styled.div`
-  grid-column: 1 / span 3;
   background-color:var(--color-grey-50);
   padding: 24px;
   border-radius:var(--border-radius-xl);
+    grid-column: 1/ span 4;
+  
+  @media ${device.laptop} {
+    grid-column: 1 / span 3;
+  }
 `;
 
 

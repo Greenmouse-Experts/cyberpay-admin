@@ -1,11 +1,18 @@
 import { Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
 import styled from "styled-components";
+import { device } from "../../styles/Globalstyles";
 
 const StyledTransferChanelChart = styled.div`
-  grid-column: 3 / -1;
+  
   background-color: var(--color-grey-50);
   padding: 24px;
   border-radius: var(--border-radius-xl);
+
+  grid-column: 1/ span 3;
+  
+  @media ${device.laptop} {
+    grid-column: 3 / -1;
+  }
 `;
 
 

@@ -8,12 +8,18 @@ import {
   YAxis,
 } from "recharts";
 import styled from "styled-components";
+import { device } from "../../styles/Globalstyles";
 
 const StyledTransactionChart = styled.div`
-  grid-column: 1 / span 2;
+  
   background-color: var(--color-grey-50);
   padding: 24px;
   border-radius: var(--border-radius-xl);
+    grid-column: 1/ span 3;
+  
+  @media ${device.laptop} {
+    grid-column: 1 / span 2;
+  }
 `;
 
 function TransactionChart() {

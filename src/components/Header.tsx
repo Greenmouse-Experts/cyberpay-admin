@@ -7,15 +7,26 @@ import {
   PiSunDuotone,
 } from "react-icons/pi";
 
-function Header() {
+interface headerProps{
+  handleShowNav: () => void;
+  handleNotify: () => void;
+}
+
+function Header({ handleShowNav, handleNotify }: headerProps) {
   return (
-    <header className="border-b border-grey-100 h-[68px] px-5 flex items-center justify-between">
+    <header className="border border-x border-grey-100 h-[68px] px-5 flex items-center justify-between">
       <div className="flex gap-3">
-        <PiNotebookDuotone size={20} />
-        <PiStarDuotone size={20} />
-        <p className=" text-grey-500">Merchant Dashboards</p>
-        <p className="text-grey-500">/</p>
-        <p>Merchant Dashboards</p>
+        <PiNotebookDuotone
+          size={20}
+          className=" cursor-pointer"
+          onClick={handleShowNav}
+        />
+        <div className=" gap-3 hidden lg:flex">
+          <PiStarDuotone size={20} />
+          <p className=" text-grey-500">Merchant Dashboards</p>
+          <p className="text-grey-500">/</p>
+          <p>Merchant Dashboards</p>
+        </div>
       </div>
 
       <div className="flex gap-3">
@@ -39,7 +50,11 @@ function Header() {
         <PiSunDuotone size={20} />
         <PiClockCounterClockwiseDuotone size={20} />
         <PiBellDuotone size={20} />
-        <PiNotebookDuotone size={20} />
+        <PiNotebookDuotone
+          size={20}
+          className=" cursor-pointer"
+          onClick={handleNotify}
+        />
       </div>
     </header>
   );
