@@ -1,54 +1,81 @@
 import { HiOutlineAdjustmentsHorizontal } from "react-icons/hi2";
-import {
-  Bar,
-  BarChart,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis,
-} from "recharts";
+// import {
+//   Bar,
+//   BarChart,
+//   ResponsiveContainer,
+//   Tooltip,
+//   XAxis,
+//   YAxis,
+// } from "recharts";
 import styled from "styled-components";
 import { device } from "../../styles/Globalstyles";
+import ReactEcharts from "echarts-for-react";
 
 const StyledTransactionChart = styled.div`
-  
   background-color: var(--color-grey-50);
   padding: 24px;
   border-radius: var(--border-radius-xl);
-    grid-column: 1/ span 3;
-  
+  grid-column: 1 / span 3;
+
   @media ${device.laptop} {
     grid-column: 1 / span 2;
   }
 `;
 
+const options = {
+  grid: { top: 20, right: 40, bottom: 20, left: 40 },
+  xAxis: {
+    type: "category",
+    data: ["Mon", "Tue", "Wed", "Thur", "Fri"]
+  },
+  yAxis: {
+    type: "value"
+  },
+  series: [
+    {
+      data: [
+        { value: 400, itemStyle: { color: '#7F61F9', borderRadius: 10 } },
+        { value: 300, itemStyle: { color: '#2F8ED6', borderRadius: 10 } },
+        { value: 350, itemStyle: { color: '#DD0A35', borderRadius: 10 } },
+        { value: 200, itemStyle: { color: '#20455A', borderRadius: 10 } },
+        { value: 280, itemStyle: { color: '#2F8ED6', borderRadius: 10 } }
+      ],
+      type: "bar"
+    }
+  ],
+  tooltip: {
+    trigger: "axis"
+  }
+};
+
+
 function TransactionChart() {
-  const data = [
-    {
-      days: "Mon",
-      mon: 3000,
-    },
-    {
-      days: "Tue",
-      tue: 2000,
-    },
-    {
-      days: "Wed",
-      wed: 2780,
-    },
-    {
-      days: "Thur",
-      thur: 1890,
-    },
-    {
-      days: "Fri",
-      fri: 2390,
-    },
-    {
-      days: "Sat",
-      sat: 3490,
-    },
-  ];
+  // const data = [
+  //   {
+  //     days: "Mon",
+  //     mon: 3000,
+  //   },
+  //   {
+  //     days: "Tue",
+  //     tue: 2000,
+  //   },
+  //   {
+  //     days: "Wed",
+  //     wed: 2780,
+  //   },
+  //   {
+  //     days: "Thur",
+  //     thur: 1890,
+  //   },
+  //   {
+  //     days: "Fri",
+  //     fri: 2390,
+  //   },
+  //   {
+  //     days: "Sat",
+  //     sat: 3490,
+  //   },
+  // ];
   return (
     <StyledTransactionChart>
       <div className="flex items-center">
@@ -61,24 +88,10 @@ function TransactionChart() {
         </div>
       </div>
       <div>
-        <ResponsiveContainer height={280} width="100%">
-          <BarChart data={data}>
-            {/* <CartesianGrid strokeDasharray="3 3" /> */}
-            <XAxis
-              dataKey="days"
-              tick={{ fill: "" }}
-              tickLine={{ stroke: "" }}
-            />
-            <YAxis unit="k" tick={{ fill: "" }} tickLine={{ stroke: "" }} />
-            <Tooltip />
-            <Bar dataKey="mon" fill="#7F61F9" barSize={28} />
-            <Bar dataKey="tue" fill="#2F8ED6" barSize={28} />
-            <Bar dataKey="wed" fill="#DD0A35" barSize={28} />
-            <Bar dataKey="thur" fill="#7F61F9" barSize={28} />
-            <Bar dataKey="fri" fill="#2F8ED6" barSize={28} />
-            <Bar dataKey="sat" fill="#DD0A35" barSize={28} />
-          </BarChart>
-        </ResponsiveContainer>
+        <ReactEcharts
+          option={options}
+          style={{ width: "100%", height: "300px" }}
+        ></ReactEcharts>
       </div>
     </StyledTransactionChart>
   );

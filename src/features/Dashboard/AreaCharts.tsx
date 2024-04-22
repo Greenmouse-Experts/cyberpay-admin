@@ -3,6 +3,7 @@ import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "rec
 import styled from "styled-components";
 import { device } from "../../styles/Globalstyles";
 
+
 const StyledAreaChart = styled.div`
   background-color:var(--color-grey-50);
   padding: 24px;
